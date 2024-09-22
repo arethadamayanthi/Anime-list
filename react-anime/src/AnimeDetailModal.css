@@ -1,0 +1,63 @@
+/* Modal container */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    background-color: #f8faff; /* Light blue background */
+    color: #333; /* Darker text for contrast */
+  }
+  
+  /* Modal header */
+  .modal-header {
+    background-color: #007bff; /* Blue background for the header */
+    color: #ffffff; /* White text */
+    border-bottom: none; /* Remove the border at the bottom */
+  }
+  
+  .modal-title {
+    font-size: 1.5rem; /* Make the title larger */
+    font-weight: bold;
+  }
+  
+  .modal-header .btn-close {
+    background-color: #ffffff; /* White close button */
+    border-radius: 50%; /* Round button */
+    opacity: 1; /* Fully visible */
+  }
+  
+  .modal-header .btn-close:hover {
+    background-color: #f0f0f0; /* Light gray hover effect */
+  }
+  
+  .modal-body {
+    padding: 20px; /* Add padding for a cleaner layout */
+    background-color: #e9f1ff; /* Light blue background */
+    border-radius: 5px;
+  }
+  
+  .modal-body img {
+    border-radius: 10px; /* Rounded edges for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }
+  
+  .modal-body p {
+    font-size: 1rem; /* Increase text size for readability */
+    color: #333; /* Darker text */
+    margin-bottom: 0.75rem; /* Spacing between paragraphs */
+  }
+  
+  .modal-body strong {
+    color: #0056b3; /* Darker blue for emphasized text */
+  }
+  
+  /* Modal footer */
+  
+  .modal-footer .btn-secondary {
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

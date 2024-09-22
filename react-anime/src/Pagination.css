@@ -1,0 +1,72 @@
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #f0f4ff; /* Light blue background for the pagination container */
+    border-radius: 10px; /* Soft rounded corners */
+  }
+  
+  .circle-btn {
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .circle-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .circle-btn:disabled {
+    background-color: #ccc; /* Gray for disabled buttons */
+    cursor: not-allowed;
+  }
+  
+  .pagination-numbers {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .page-btn {
+    background-color: #e9f1ff; /* Light blue for page numbers */
+    border: 2px solid #007bff; /* Blue border */
+    color: #007bff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .page-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .page-btn.active {
+    background-color: #007bff; /* Highlight active page */
+    color: white;
+    border-color: #0056b3;
+  }
+  
+  .w-auto.ml-3 {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 2px solid #007bff;
+    font-size: 14px;
+    color: #007bff;
+    background-color: #e9f1ff;
+  }
+  
+  .w-auto.ml-3:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  

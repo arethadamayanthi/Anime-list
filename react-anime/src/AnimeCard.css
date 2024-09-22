@@ -1,0 +1,52 @@
+.anime-card {
+    background-color: #ffffff;            /* White background for the card */
+    border: 2px solid #ddd;               /* Light gray border */
+    border-radius: 10px;                  /* Soft rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;  /* Smooth hover effect */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;               /* Ensure content is stacked vertically */
+    height: 100%;                         /* Full height for uniform size */
+    margin: 15px;                         /* Equal margin around each card */
+}
+
+.anime-card:hover {
+    transform: scale(1.05);               /* Slightly enlarge the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Increase shadow on hover */
+    border-color: #007bff;                /* Change border color to blue on hover */
+}
+
+.card-img-top {
+    height: 250px;                        /* Set a fixed height for images */
+    object-fit: cover;                    /* Ensure the image covers the area */
+}
+
+.card-body {
+    padding: 15px;                        /* Spacing inside the card */
+    color: #333;                          /* Darker text color */
+    flex-grow: 1;                         /* Ensure content takes up remaining space */
+}
+
+.card-title {
+    font-size: 1.25rem;                   /* Increase title font size */
+    font-weight: bold;
+    color: #007bff;                       /* Blue color for the title */
+}
+
+.card-text {
+    font-size: 0.95rem;                   /* Slightly smaller text for additional info */
+    color: #555;                          /* Softer text color */
+}
+
+.card-text:not(:last-child) {
+    margin-bottom: 0.75rem;               /* Space between card texts */
+}
+
+/* Container for rows of cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;                      /* Wrap cards onto multiple lines */
+    justify-content: space-around;        /* Spacing between cards */
+    margin: 0 auto;                       /* Center container */
+}

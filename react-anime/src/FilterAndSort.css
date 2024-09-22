@@ -1,0 +1,76 @@
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Default button styling for sort buttons */
+.sort-container button {
+    margin-right: 10px;
+    border: 2px solid #ccc;  /* Default gray border */
+    background-color: #ffffff;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Active state for the selected sort button */
+.sort-container button.active {
+    border-color: #007bff;  /* Blue border when active */
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+/* Hover effect for sort buttons */
+.sort-container button:hover {
+    background-color: #f0f0f0;  /* Light gray on hover */
+}
+
+/* Default genre button styling */
+.modal-body button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;  /* Default gray border */
+    color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Active genre button state */
+.modal-body button.active {
+    border-color: #007bff;
+    color: #007bff;
+    background-color: #e9f1ff; /* Light blue background for active button */
+}
+
+/* Hover effect for genre buttons */
+.modal-body button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Modal close button */
+.modal-header .btn-close {
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.modal-header .btn-close:hover {
+    background-color: #f0f0f0;
+}
+
+.modal-header .btn-close:focus {
+    box-shadow: none;
+}

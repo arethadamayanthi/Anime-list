@@ -1,247 +1,40 @@
-/* General styles */
-body {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e2e6ea 100%);
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Container styling */
-.container {
-  margin: auto;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
-}
-
-/* Title */
-h1 {
-  color: #007bff;
-  font-weight: 700;
-  font-size: 3rem;
-  padding-top: 80px;
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: 1.5px;
-}
-
-/* Search bar styling */
-form {
+/* Container utama aplikasi */
+.app-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
-}
-
-form input[type="text"] {
-  width: 80%;
-  max-width: 400px;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #007bff;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-form input[type="text"]:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-}
-
-form button {
-  margin-left: 10px;
-  padding: 12px 24px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-form button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
-
-/* Filter buttons */
-.mb-3 button {
-  margin: 5px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: 1px solid #007bff;
-  background-color: transparent;
-  color: #007bff;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mb-3 button:hover {
-  background-color: #007bff;
-  color: white;
-  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
-}
-
-/* Card styling */
-.card {
-  border: none;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  height: 100%;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  height: 240px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.card:hover img {
-  transform: scale(1.05);
-}
-
-.card-body {
-  background-color: #007bff;
-  color: white;
-  padding: 12px;
-}
-
-.card-body h5 {
-  font-weight: 600;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.card-body p {
-  font-size: 1rem;
-  margin: 5px 0;
-  opacity: 0.9;
-}
-
-/* Anime Cards Grid */
-.row {
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  flex-wrap: wrap;
-  gap: 20px; /* Keeps the gap between cards */
-}
-
-/* Custom Pagination Styles */
-.custom-pagination {
-  background-color: #0056b3;
-  border-radius: 50px;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  box-shadow: 0px 4px 10px rgba(0, 86, 179, 0.3);
-}
-
-.circle-btn {
-  background-color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #0056b3;
-  margin: 0 15px;
-  cursor: pointer;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  text-align: center;
 }
 
-.circle-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.pagination-numbers {
-  background-color: #cee6ff;
-  border-radius: 25px;
-  display: flex;
-  padding: 0 20px;
-}
-
-.page-btn {
-  background-color: transparent;
-  border: none;
-  color: #007bff;
-  margin: 0 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.page-btn:hover {
-  color: #fff;
-}
-
-.page-btn.active {
-  color: #fff;
-}
-
-/* Modal */
-.modal-content {
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.modal-header {
-  border-bottom: none;
-  background-color: #007bff;
-  color: white;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.modal-header .btn-close {
-  color: white; /* Set background to white */
-  color: #ffffff; /* Set text color to match */
-}
-
-.modal-header .btn-close:hover {
-  color: #0056b3; /* Darker color on hover */
-} 
-
-.modal-header h5 {
+/* Styling untuk judul aplikasi */
+.app-title {
+  font-size: 2.5rem;
   font-weight: 700;
+  color: #007bff;
+  margin-bottom: 2rem;
 }
 
-.modal-body {
-  padding: 25px;
-  color: #333;
+/* Responsif - Menyesuaikan judul dan padding berdasarkan ukuran layar */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem; 
+  }
+  
+  .app-title {
+    font-size: 2rem; 
+  }
 }
 
-.modal-body p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.modal-footer {
-  border-top: none;
-}
-
-.modal-footer button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.modal-footer button:hover {
-  background-color: #0056b3;
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0.5rem; 
+  }
+  
+  .app-title {
+    font-size: 1.5rem; 
+  }
 }
