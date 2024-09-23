@@ -17,7 +17,7 @@ function AnimeDetailModal({ show, anime, onClose }) {
         <p><strong>Year:</strong> {anime?.aired?.prop?.from?.year}</p>
         <p><strong>Synopsis:</strong> {anime?.synopsis}</p>
       </Modal.Body>
-      <Modal.Footer  style={{ backgroundColor: "#fff" }} >
+      <Modal.Footer  style={{ backgroundColor: "#f8faff" }} >
         <Button variant="secondary" onClick={onClose}>Close</Button>
       </Modal.Footer>
     </Modal>
